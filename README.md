@@ -1,8 +1,9 @@
 GOR (Generic Online Reporting) 
 ==============================
 
-This web application was done for a final year project
-by Bob Marks in 2002.
+This web application was created as part of a final year BSc Computing Science project
+by myself (Bob Marks) in 2002.  A PDF of the Thesis can be downloaded 
+[here](https://github.com/bobmarks/gor/raw/master/pdf/final_year_project.pdf).
 
 ![Screenshot of GOR](https://github.com/bobmarks/gor/raw/master/images/screenshot_report_format.gif "Screenshot of GOR")
 
