@@ -4,30 +4,27 @@ GOR (Generic Online Reporting)
 This web application was done for a final year project
 by Bob Marks in 2002.
 
-![Screenshot of GOR](https://github.com/bobmarks/gor/raw/master/images/screenshot_report_format.png 
-"Screenshot of GOR")
+![Screenshot of GOR](https://github.com/bobmarks/gor/raw/master/images/screenshot_report_format.gif "Screenshot of GOR")
 
 GOR is a web based reporting application with a 
 query-by-example query generator and WYSIWYG report 
 formatter.  Also reports can be run in a variety of 
 languages.
 
-NOTE: GOR has been updated slightly from original final 
-      year project source.  Updates are mostly refactors 
-      and packaging as a WAR file for easier deployment.
+**NOTE:** GOR has been updated slightly from original final 
+   year project source.  Updates are mostly refactors 
+   and packaging as a WAR file for easier deployment.
 
 INSTALLATION GUIDE
 ------------------
 
 Use the following steps to install the system.
 
-1.  Extract gor.zip file somewhere on the filesystem.
+1.  Extract `gor.zip` file somewhere on the filesystem / or git clone.
 
-2.  Ensure that a webserver that is capable of running
-    Java web applications (WAR files) is installed.
-    E.g. tomcat 6.0
+2.  Ensure a Java webserver is installed. E.g. tomcat 6.0
 
-3.  Copy the gor.war file to the deploy directory of the 
+3.  Copy `gor.war` file to the deploy directory of the 
     webserver (usually webapps). e.g. c:\tomcat\webapps.
 
 4.  Copy the \gor\gor data folder somewhere.  E.g.
@@ -45,7 +42,7 @@ Use the following steps to install the system.
 
         GOR=c:\tomcat\gor
 
-    This can be done several ways, I prefer to update the 
+    This can be done several ways e.g. update the 
     starup batch file of the webserver.  E.g. in tomcat 
     update the `c:\tomcat\bin\catalina.bat` file.  
     Look for following line.
@@ -57,10 +54,10 @@ Use the following steps to install the system.
         -DGOR="c:\tomcat\gor"
     
     to the end of the line.
+    
+    Alternatively you can see an `GOR` environment variable. 
 
-  
 6.  Start the web server.
-
 
 7.  Access to the GOR webapp is now possible using the 
     following web address ...
@@ -99,5 +96,4 @@ Contact
 If any problems with the above steps then contact Bob
 Marks at the below email addresss.
 
-Email to Robert Marks at
-marksie531@yahoo.com		(recommended)
+marksie531@gmail.com
