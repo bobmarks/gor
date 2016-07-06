@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Help</title>
+<link href="styles.css" type="text/css rel=stylesheet"><meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+</head>
+<body bgcolor='#FFFFFF' text="#000000" link="#000000" vlink="#000000" alink="#999999">
+<table width='100%' border='0' cellpadding='0' cellspacing='0'>
+  <tr>
+    <td><img src='/gor/images/title.gif' width='300' height='50'></td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><img src='images/1p.gif' width='1' height='1'></td>
+  </tr>
+  <tr bgcolor='#000099'>
+    <td height='22'> &nbsp;<a class='blue' href='/gor/Home'>Home</a>&nbsp;<font face='Verdana, Arial' color='#CCCCFF'><b>|</b></font>&nbsp;<a class='blue' href='/servlet/ReportServlet'>Report</a>&nbsp;<font face='Verdana, Arial' color='#CCCCFF'><b>|</b></font>&nbsp;<a class='blue' href='/servlet/DatabaseServlet'>Database</a>&nbsp;<font face='Verdana, Arial' color='#CCCCFF'><b>|</b></font>&nbsp;<a class='blue' href='/servlet/LanguageServlet'>English</a>&nbsp;<font face='Verdana, Arial' color='#CCCCFF'><b>|</b></font>&nbsp;<a class='blue' href='/servlet/LogoffServlet'>Log
+      Off</a>&nbsp;<font face='Verdana, Arial' color='#CCCCFF'><b>|</b></font>&nbsp;<font color='#FFFFFF' face='Verdana, Arial' size=2><b>Help</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><img src='images/1p.gif' width='1' height='1'></td>
+  </tr>
+  <tr>
+    <td valign='middle' bgcolor="#CCCCCC">
+      <table border='0' cellspacing='0' cellpadding='0'>
+        <tr>
+          <td bgcolor='#999999'><font color='#FFFFFF' face='Verdana, Arial' size='2'><b>&nbsp;Contents</b></font>&nbsp;</td>
+          <td bgcolor='#000000' width='1'><img src='images/1p.gif' width='1' height='1'></td>
+          <td bgcolor='#CCCCCC'>&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#333333"><b>About</b></font>&nbsp;</td>
+          <td bgcolor='#000000' width='1'><img src='images/1p.gif' width='1' height='1'></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><img src='images/1p.gif' width='1' height='1'></td>
+  </tr>
+  <tr>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="1"></a></font></i></b></font></td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099">Contents</font></i></b></font></p>
+      <ul>
+        <li><font color="#000000"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="#1">Introduction
+          to Generic Online Reporting</a></font></b></font></li>
+        <li><a href="#2"><font color="#000000"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Database
+          Connections </font></b></font></a><font color="#000000"> </font>
+          <ul>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#2.1">Adding
+              a database connection</a></font></li>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#2.2">Opening
+              an existing database connection</a></font></li>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#2.3">Deleting
+              a database connection</a></font></li>
+          </ul>
+        </li>
+        <li><a href="#3"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Report
+          (file operations)</b></font> </a>
+          <ul>
+            <li><a href="#3.1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Creating
+              new report</font></a></li>
+            <li><a href="#3.2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Opening
+              an existing report</font></a></li>
+            <li><a href="#3.3"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Deleting
+              an existing report</font></a></li>
+          </ul>
+        </li>
+        <li><a href="#4"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Report
+          (editing)</b></font> </a>
+          <ul>
+            <li><a href="#4.1"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Tables
+              / Aliases</font></a></li>
+            <li><a href="#4.2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Relationships</font></a></li>
+            <li><a href="#4.3"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Query
+              (Columns and conditions)</font></a></li>
+            <li><a href="#4.4"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Grouping</font></a></li>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#4.5">Test</a></font></li>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#4.6">Labels</a></font></li>
+            <li><a href="#4.7"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Formatting</font></a></li>
+          </ul>
+        </li>
+        <li><a href="#5"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Report
+          (Running)</b></font> </a>
+          <ul>
+            <li><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><a href="#5.1">Running
+              from system</a></font></li>
+            <li><a href="#5.2"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Running
+              from external system</font></a></li>
+          </ul>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="1"></a>Introduction</font></i></b></font>
+      </p>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="2"></a>Database
+        Connections </font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="2.1"></a></font></i></b></font><font color="#000000" size="2">Adding
+        a database connection</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="2.2"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Opening
+        an existing database connection</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="2.3"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Deleting
+        a database connection</font></i></b></font></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="3"></a>Report
+        (File Operations)</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="3.1"></a></font></i></b></font><font color="#000000" size="2">Creating
+        a new report</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="3.2"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Opening
+        an existing report</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="3.3"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Deleting
+        a database connection</font></i></b></font></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4"></a>Report
+        (Editing)</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.1"></a></font></i></b></font><font color="#000000" size="2">Tables
+        / Aliases</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.2"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Relationships</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.3"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Query
+        (Columns and Conditions)</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.4"></a></font></i></b></font><font color="#000000" size="2">Grouping</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.5"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Test</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.6"></a></font></i></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"></font></i></b></font><font color="#000000" size="2">Labels</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="4.7"></a></font></i></b></font><font color="#000000" size="2">Formatting</font></i></b></font></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="5"><b><i><font color="#000099"><a name="5"></a>Report
+        (Running)</font></i></b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Introduction
+        text</font></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr noshade width='100%' size='1' align='left'>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

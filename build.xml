@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+==============================================================================
+Ant build script for compiling web application Generc Online Reporting (gor)
+==============================================================================
+-->
+
+<project name="JOGRE WEB APP" default="package" basedir=".">
+
+    <description>
+        This is the build file for the GOR Web application.
+    </description>
+
+    <!--
+    ==========================================================================
+    Global Properties
+    ==========================================================================
+    -->
+
+    <property file="${basedir}/build.properties"/>
+    
+    <!-- Set up class path -->
+    <path id="classpath">
+        <fileset dir="${web-inf.lib.dir}" includes="**/*.jar"/>
+    </path>
+    
+    <!--
+    ==========================================================================
+    Target: init
+    ==========================================================================
+    -->
+    <target name="init">
+        <!-- Create Directories -->
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${web-inf.classes.dir}"/>
+    </target>
+
+    <!--
+    ==========================================================================
+    Target: "clean"
+    ==========================================================================
+    -->
+    <target name="clean" description="clean up">
+        <!-- Delete the ${class.dir} directory trees -->
+        <delete dir="${classes.dir}"/>
+        <delete dir="${web-inf.classes.dir}"/>      
+    </target>
+
+    <!--
+    ==========================================================================
+    Target: "compile"
+    ==========================================================================
+    -->    
+    <target name="compile" depends="init" description="Compile src">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${build.debug}" debuglevel="${build.debuglevel}" source="${build.source}" target="${build.target}" deprecation="${build.deprecation}">
+            <compilerarg line="${build.extraparams}"/>
+            <classpath refid="classpath"/>
+        </javac>    
+    </target>
+    
+    <!--
+    ==========================================================================
+    Target: "package"
+    ==========================================================================
+    -->    
+    <target name="package" depends="compile" description="Package into WAR file">
+             
+        <!-- Create WAR file -->
+        <jar destfile="${war.filename}">
+            
+            <!-- From Webapp project --> 
+            <zipfileset dir="${basedir}" includes="README.txt"/>
+            <zipfileset dir="${html.dir}" />           
+        	<zipfileset dir="${web-inf}"       prefix="${web-inf}"/>
+            <zipfileset dir="${classes.dir}"   prefix="${web-inf.prefix}"/>
+        </jar>
+    </target>
+    
+    <!--
+    ==========================================================================
+    Target: "deploy"
+    ==========================================================================
+    -->     
+    <target name="deploy" depends="package">
+        <!-- Deploy WAR file to server. -->
+        <copy todir="${deploy.dir}" file="${war.filename}"/>    
+    </target>
+	
+	<!--
+	==========================================================================
+	Target: ""
+	==========================================================================
+	-->     
+	<target name="release" depends="package">
+	    <!-- Copy applets -->
+		<delete file="${release.file}"/>
+	    <zip destfile="${release.file}">
+            <zipfileset dir="." prefix="gor">
+            	<!-- Exclude classes from JAR file -->
+                <exclude name="classes/**"/>
+            	<exclude name="WEB-INF/classes/**"/>
+            </zipfileset>
+	    </zip>    
+	</target>
+    
+    <!-- Extra targets -->
+    <target name="all" depends="clean, deploy"/>
+</project>

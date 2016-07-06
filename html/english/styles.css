@@ -1,0 +1,32 @@
+.white {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #FFFFFF; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.blue {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #CCCCFF; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.black {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.grey {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #CCCCCC; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.grey_dark {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #333333; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.green {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #006600; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+
+A.blue:hover {
+  color : #FFFFFF;
+}
+A.black:hover {
+  color : #FFFFFF;
+}
+A.grey:hover {
+  color : #FFFFFF;
+}
+A.grey_dark:hover {
+  color : #FFFFFF;
+}
+

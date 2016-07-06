@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"  "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+  <display-name>GOR Web App</display-name>
+ 
+  <!-- Servlets -->
+  <servlet><servlet-name>DatabaseAdd</servlet-name><servlet-class>org.gor.servlet.DatabaseAddServlet</servlet-class></servlet>
+  <servlet><servlet-name>DatabaseDelete</servlet-name><servlet-class>org.gor.servlet.DatabaseDeleteServlet</servlet-class></servlet>
+  <servlet><servlet-name>DatabaseOpen</servlet-name><servlet-class>org.gor.servlet.DatabaseOpenServlet</servlet-class></servlet>
+  <servlet><servlet-name>Database</servlet-name><servlet-class>org.gor.servlet.DatabaseServlet</servlet-class></servlet>
+  <servlet><servlet-name>Home</servlet-name><servlet-class>org.gor.servlet.HomeServlet</servlet-class></servlet>
+  <servlet><servlet-name>Language</servlet-name><servlet-class>org.gor.servlet.LanguageServlet</servlet-class></servlet>
+  <servlet><servlet-name>Logoff</servlet-name><servlet-class>org.gor.servlet.LogoffServlet</servlet-class></servlet>
+  <servlet><servlet-name>Logon</servlet-name><servlet-class>org.gor.servlet.LogonServlet</servlet-class></servlet>
+  <servlet><servlet-name>Report</servlet-name><servlet-class>org.gor.servlet.ReportServlet</servlet-class></servlet>  
+  <servlet><servlet-name>ReportDelete</servlet-name><servlet-class>org.gor.servlet.ReportDeleteServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditFormat</servlet-name><servlet-class>org.gor.servlet.ReportEditFormatServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditGrouping</servlet-name><servlet-class>org.gor.servlet.ReportEditGroupingServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditLabels</servlet-name><servlet-class>org.gor.servlet.ReportEditLabelsServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditQuery</servlet-name><servlet-class>org.gor.servlet.ReportEditQueryServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditRelations</servlet-name><servlet-class>org.gor.servlet.ReportEditRelationsServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEdit</servlet-name><servlet-class>org.gor.servlet.ReportEditServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditTables</servlet-name><servlet-class>org.gor.servlet.ReportEditTablesServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportEditTest</servlet-name><servlet-class>org.gor.servlet.ReportEditTestServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportNew</servlet-name><servlet-class>org.gor.servlet.ReportNewServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportOpen</servlet-name><servlet-class>org.gor.servlet.ReportOpenServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportRun</servlet-name><servlet-class>org.gor.servlet.ReportRunServlet</servlet-class></servlet>
+  <servlet><servlet-name>ReportGenerator</servlet-name><servlet-class>org.gor.servlet.ReportGeneratorServlet</servlet-class></servlet>
+
+  <!--  Servlet mappings -->
+  <servlet-mapping><servlet-name>DatabaseAdd</servlet-name><url-pattern>/DatabaseAdd</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>DatabaseDelete</servlet-name><url-pattern>/DatabaseDelete</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>DatabaseOpen</servlet-name><url-pattern>/DatabaseOpen</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Database</servlet-name><url-pattern>/Database</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Home</servlet-name><url-pattern>/Home</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Language</servlet-name><url-pattern>/Language</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Logoff</servlet-name><url-pattern>/Logoff</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Logon</servlet-name><url-pattern>/Logon</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>Report</servlet-name><url-pattern>/Report</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportDelete</servlet-name><url-pattern>/ReportDelete</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditFormat</servlet-name><url-pattern>/ReportEditFormat</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditGrouping</servlet-name><url-pattern>/ReportEditGrouping</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditLabels</servlet-name><url-pattern>/ReportEditLabels</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditQuery</servlet-name><url-pattern>/ReportEditQuery</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditRelations</servlet-name><url-pattern>/ReportEditRelations</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEdit</servlet-name><url-pattern>/ReportEdit</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditTables</servlet-name><url-pattern>/ReportEditTables</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportEditTest</servlet-name><url-pattern>/ReportEditTest</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportNew</servlet-name><url-pattern>/ReportNew</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportOpen</servlet-name><url-pattern>/ReportOpen</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportRun</servlet-name><url-pattern>/ReportRun</url-pattern></servlet-mapping>
+  <servlet-mapping><servlet-name>ReportGenerator</servlet-name><url-pattern>/ReportGenerator</url-pattern></servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file></welcome-file>
+  </welcome-file-list>
+
+</web-app>
